@@ -1,0 +1,201 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				12,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "IDLE"
+		},
+		{
+			"offsets": [
+				16,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "LEFT"
+		},
+		{
+			"offsets": [
+				-7,
+				57
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "UP"
+		},
+		{
+			"offsets": [
+				-25,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "RIGHT"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				8
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "MISSLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				13
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "MISSDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				57
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "MISSUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				29
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "MISSRIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				18,
+				3
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "COOLLEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-58
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "COOLDOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				109
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "COOLUP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-33
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				0
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "COOLRIGHT",
+			"indices": []
+		},
+		{
+			"offsets": [
+				30,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "DODGE"
+		},
+		{
+			"offsets": [
+				15,
+				69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hurt",
+			"indices": [],
+			"name": "HIT"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "COOLLEFT"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/BOYFRIEND",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.9,
+	"_editor_isPlayer": true
+}
