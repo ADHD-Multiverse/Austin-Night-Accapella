@@ -26,8 +26,15 @@ class Alphabet extends FlxSpriteGroup
 	public var bold:Bool = false;
 	public var letters:Array<AlphaCharacter> = [];
 
+	public var forceX:Float = Math.NEGATIVE_INFINITY;
+	public var targetY:Float = 0;
+	public var yMult:Float = 120;
+	public var xAdd:Float = 0;
+	public var yAdd:Float = 0;
 	public var isMenuItem:Bool = false;
-	public var targetY:Int = 0;
+	public var isMenuItemCentered:Bool = false;
+	public var textSize:Float = 1.0;
+
 	public var changeX:Bool = true;
 	public var changeY:Bool = true;
 
@@ -35,6 +42,8 @@ class Alphabet extends FlxSpriteGroup
 	public var scaleX(default, set):Float = 1;
 	public var scaleY(default, set):Float = 1;
 	public var rows:Int = 0;
+
+	public var lettersArray:Array<AlphaCharacter> = [];
 
 	public var distancePerItem:FlxPoint = new FlxPoint(20, 120);
 	public var startPosition:FlxPoint = new FlxPoint(0, 0); //for the calculations
@@ -166,6 +175,17 @@ class Alphabet extends FlxSpriteGroup
 			if(changeY)
 				y = FlxMath.lerp(y, (targetY * 1.3 * distancePerItem.y) + startPosition.y, lerpVal);
 		}
+		if (isMenuItemCentered)
+			{
+				var lerpVal:Float = CoolUtil.boundTo(elapsed * 9.6, 0, 1);
+				var scaledY = FlxMath.remapToRange(targetY, 0, 1, 0, 1.3);
+				y = FlxMath.lerp(y, (scaledY * yMult) + (FlxG.height * 0.48) + yAdd, lerpVal);
+				if(forceX != Math.NEGATIVE_INFINITY) {
+					x = forceX;
+				} else {
+					x = FlxMath.lerp(x , (targetY * 20) + 90 + xAdd, lerpVal);
+				}
+			}
 		super.update(elapsed);
 	}
 

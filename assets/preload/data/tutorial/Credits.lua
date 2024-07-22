@@ -33,7 +33,7 @@ TweenSpeed = 0.8 --How fast the credits move in/out
 
 Transparency = 0.6 --I wouldn't mess with this, but it changes the transparency of the credits underlay
 
-Font = 'vcr.ttf' --Change the Font here if needed
+Font = 'SuperMario256.ttf' --Change the Font here if needed
 
 HorizontalUnderLayOffset = 0  --Moves Underlay if needed (horizontally)
 --POSITIVE MOVES LEFT

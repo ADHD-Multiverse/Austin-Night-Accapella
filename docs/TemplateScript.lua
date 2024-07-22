@@ -167,7 +167,7 @@ function onCheckForAchievement(name)
 	
 	--EX:
 --[[
-  if name == 'sick-full-combo' and getProperty('bads') == 0 and getProperty('goods') == 0 and getProperty('shits') == 0 and getProperty('endingSong') then
+  if name == 'sick-full-combo' and getProperty('bads') == 0 and getProperty('goods') == 0 and getProperty('trashs') == 0 and getProperty('endingSong') then
     return Function_Continue
   end
   if name == 'bad-health-finish' and getProperty('health') < 0.01 and getProperty('endingSong') then
